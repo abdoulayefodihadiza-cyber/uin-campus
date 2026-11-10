@@ -1,4 +1,5 @@
-
+#include "uincampus/version.hpp"
+#include <print>
 #include "uincampus/regles.hpp"
 #include "uincampus/saisie.hpp"
 #include "uincampus/version.hpp"
@@ -9,9 +10,14 @@
 
 int main()
 {
+    
+    std::println("Bienvenue sur uin-campus !");
+    std::println("Version {}", uin::version());
+
+
     std::println("UIN-Campus {} — Calcul de la moyenne d'un étudiant\n", uin::version());
 
-    const std::string nom = uin::lireTexte("Nom de l'étudiant : ");
+    const std::string nom = uin::lireTexte("Nom del'étudiant : ");
     const int nbNotes = uin::lireEntier("Nombre de notes (1 à 30) : ", 1, 30);
 
     std::vector<double> notes;
