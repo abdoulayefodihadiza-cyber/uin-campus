@@ -1,4 +1,4 @@
-# Install script for directory: /home/lenovo/Documents/uin-campus
+# Install script for directory: /home/lenovo/Bureau/HADIZA
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/lenovo/Documents/uin-campus/build/debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/lenovo/Bureau/HADIZA/build/debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
