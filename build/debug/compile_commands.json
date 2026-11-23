@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/home/lenovo/Bureau/uin-campus/build/debug",
+  "command": "/usr/bin/c++ -I/home/lenovo/Bureau/uin-campus/include -I/home/lenovo/Bureau/uin-campus/build/debug/src/generated -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -o src/CMakeFiles/uincampus_core.dir/version.cpp.o -c /home/lenovo/Bureau/uin-campus/src/version.cpp",
+  "file": "/home/lenovo/Bureau/uin-campus/src/version.cpp",
+  "output": "src/CMakeFiles/uincampus_core.dir/version.cpp.o"
+},
+{
+  "directory": "/home/lenovo/Bureau/uin-campus/build/debug",
+  "command": "/usr/bin/c++ -I/home/lenovo/Bureau/uin-campus/include -I/home/lenovo/Bureau/uin-campus/build/debug/src/generated -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -o src/CMakeFiles/uincampus_core.dir/regles.cpp.o -c /home/lenovo/Bureau/uin-campus/src/regles.cpp",
+  "file": "/home/lenovo/Bureau/uin-campus/src/regles.cpp",
+  "output": "src/CMakeFiles/uincampus_core.dir/regles.cpp.o"
+},
+{
+  "directory": "/home/lenovo/Bureau/uin-campus/build/debug",
+  "command": "/usr/bin/c++ -I/home/lenovo/Bureau/uin-campus/include -I/home/lenovo/Bureau/uin-campus/build/debug/src/generated -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -o src/CMakeFiles/uincampus_core.dir/saisie.cpp.o -c /home/lenovo/Bureau/uin-campus/src/saisie.cpp",
+  "file": "/home/lenovo/Bureau/uin-campus/src/saisie.cpp",
+  "output": "src/CMakeFiles/uincampus_core.dir/saisie.cpp.o"
+},
+{
+  "directory": "/home/lenovo/Bureau/uin-campus/build/debug",
+  "command": "/usr/bin/c++ -I/home/lenovo/Bureau/uin-campus/include -I/home/lenovo/Bureau/uin-campus/build/debug/src/generated -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -o src/CMakeFiles/uincampus_core.dir/calculs.cpp.o -c /home/lenovo/Bureau/uin-campus/src/calculs.cpp",
+  "file": "/home/lenovo/Bureau/uin-campus/src/calculs.cpp",
+  "output": "src/CMakeFiles/uincampus_core.dir/calculs.cpp.o"
+},
+{
+  "directory": "/home/lenovo/Bureau/uin-campus/build/debug",
+  "command": "/usr/bin/c++ -I/home/lenovo/Bureau/uin-campus/include -g -std=gnu++23 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -fsanitize=address,undefined -fno-omit-frame-pointer -o app/CMakeFiles/uin-campus.dir/main.cpp.o -c /home/lenovo/Bureau/uin-campus/app/main.cpp",
+  "file": "/home/lenovo/Bureau/uin-campus/app/main.cpp",
+  "output": "app/CMakeFiles/uin-campus.dir/main.cpp.o"
+}
+]

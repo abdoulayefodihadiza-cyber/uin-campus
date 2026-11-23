@@ -6,10 +6,18 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: uin-campus
+# Project: UINCampus
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
+
+#############################################
+# Rule for running custom commands.
+
+rule CUSTOM_COMMAND
+  command = $COMMAND
+  description = $DESC
+
 
 #############################################
 # Rule for generating CXX dependencies.
@@ -24,7 +32,7 @@ rule CXX_SCAN__uincampus_core_Debug
 # Rule to generate ninja dyndep files for CXX.
 
 rule CXX_DYNDEP__uincampus_core_Debug
-  command = /usr/bin/cmake -E cmake_ninja_dyndep --tdi=CMakeFiles/uincampus_core.dir/CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  command = /usr/bin/cmake -E cmake_ninja_dyndep --tdi=src/CMakeFiles/uincampus_core.dir/CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
   rspfile_content = $in
@@ -72,7 +80,7 @@ rule CXX_SCAN__uin-campus_Debug
 # Rule to generate ninja dyndep files for CXX.
 
 rule CXX_DYNDEP__uin-campus_Debug
-  command = /usr/bin/cmake -E cmake_ninja_dyndep --tdi=CMakeFiles/uin-campus.dir/CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
+  command = /usr/bin/cmake -E cmake_ninja_dyndep --tdi=app/CMakeFiles/uin-campus.dir/CXXDependInfo.json --lang=CXX --modmapfmt=gcc --dd=$out @$out.rsp
   description = Generating CXX dyndep file $out
   rspfile = $out.rsp
   rspfile_content = $in
@@ -105,14 +113,6 @@ rule CXX_EXECUTABLE_LINKER__uin-campus_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
-
-
-#############################################
-# Rule for running custom commands.
-
-rule CUSTOM_COMMAND
-  command = $COMMAND
-  description = $DESC
 
 
 #############################################

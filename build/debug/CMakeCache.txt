@@ -113,13 +113,28 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_DESCRIPTION:STATIC=
+CMAKE_PROJECT_DESCRIPTION:STATIC=Système de gestion académique de l'UIN
 
 //Value Computed by CMake
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=uin-campus
+CMAKE_PROJECT_NAME:STATIC=UINCampus
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=0.1.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=1
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -186,17 +201,17 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//No help, variable specified on the command line.
-UIN_ACTIVER_SANITIZERS:UNINITIALIZED=ON
+//Value Computed by CMake
+UINCampus_BINARY_DIR:STATIC=/home/lenovo/Bureau/uin-campus/build/debug
 
 //Value Computed by CMake
-uin-campus_BINARY_DIR:STATIC=/home/lenovo/Bureau/uin-campus/build/debug
+UINCampus_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-uin-campus_IS_TOP_LEVEL:STATIC=ON
+UINCampus_SOURCE_DIR:STATIC=/home/lenovo/Bureau/uin-campus
 
-//Value Computed by CMake
-uin-campus_SOURCE_DIR:STATIC=/home/lenovo/Bureau/uin-campus
+//Activer AddressSanitizer et UBSan
+UIN_ACTIVER_SANITIZERS:BOOL=ON
 
 
 ########################
@@ -285,7 +300,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
