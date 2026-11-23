@@ -1,12 +1,56 @@
 #include "uincampus/regles.hpp"
 #include "uincampus/saisie.hpp"
 #include "uincampus/version.hpp"
+#include <cstdlib>
 #include <format>
 #include <print>
+#include <span>
 #include <string>
+#include <string_view>
 #include <vector>
 
-int main() {
+namespace {
+
+enum class Suite { Continuer, Terminer, Erreur };
+
+void afficherAide() {
+  std::println("Usage : uin-campus [--version] [--aide]");
+  std::println("  --version  affiche la version");
+  std::println("  --aide     affiche cette aide");
+}
+
+[[nodiscard]] Suite traiterOptions(std::span<char *> arguments) {
+  if (arguments.size() <= 1) {
+    return Suite::Continuer;
+  }
+  for (const std::string_view option : arguments.subspan(1)) {
+    if (option == "--version") {
+      std::println("uin-campus {}", uin::version());
+      return Suite::Terminer;
+    }
+    if (option == "--aide") {
+      afficherAide();
+      return Suite::Terminer;
+    }
+    std::println(stderr, "Option inconnue : {}", option);
+    afficherAide();
+    return Suite::Erreur;
+  }
+  return Suite::Continuer;
+}
+
+} // namespace
+
+int main(int argc, char *argv[]) {
+  switch (traiterOptions(std::span{argv, static_cast<std::size_t>(argc)})) {
+  case Suite::Terminer:
+    return EXIT_SUCCESS;
+  case Suite::Erreur:
+    return EXIT_FAILURE;
+  case Suite::Continuer:
+    break;
+  }
+
   std::println("UIN-Campus {} - Calcul de la moyenne d'un etudiant\n",
                uin::version());
 
@@ -34,4 +78,5 @@ int main() {
   std::println("{:<20}{:>20}", "Decision",
                moyenne >= uin::seuilValidation ? "Valide" : "Non valide");
   std::println("{:-<40}", "");
+  return EXIT_SUCCESS;
 }
